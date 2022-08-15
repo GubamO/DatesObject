@@ -1,11 +1,43 @@
 * {
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
 }
 
-#date1 {
+body {
+  background-color: gray;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  margin-top: 50px;
+  font-size: 30px;
+}
+.calendar #WeekDay {
+  background-color: red;
+  color: white;
+  border-radius: 50% 50% 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
-  font-family: sans-serif;
+  width: 200px;
+}
+.calendar #MonthDay {
+  text-align: center;
+  color: gray;
+  width: 200px;
+  background-color: white;
+}
+.calendar #Month {
+  color: gray;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+}
+.calendar #Year {
+  width: 200px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
