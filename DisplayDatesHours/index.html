@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <main class="calendar">
-        <span id="WeekDay"></span>
-        <span id="MonthDay"></span>
-        <span id="Month"></span>
-        <span id="Year"></span>
-    </main>
-        <span id="Hours"></span>
-        <span id="Minutes"></span>
-        <span id="Seconds"></span>
-
-    <script src="script.js"></script>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dates</title>
+        <link rel="stylesheet" href="/DisplayDatesHours/css/style.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body class="light">
+        <main>
+            <section class="timeshow">
+                <div class="calendar">
+                    <div class="calendar_day light">
+                        <p class="calendar_day_txt light"></p>
+                    </div>
+                    <div class="calendar_month light">
+                        <p class="calendar_month_day_txt light"></p>
+                        <p class="calendar_month_month_txt light"></p>
+                    </div>
+                    <div class="calendar_year light">
+                        <p class="calendar_year_txt light"></p>
+                    </div>
+                </div>
+                <div class="timer light">
+                    <p name="hours" class="timer_hours light">17</p>
+                    <div class="timer_dots light">
+                        <div class="timer_dots_dot light"></div>
+                        <div class="timer_dots_dot light"></div>
+                    </div>
+                    <p name="minutes" class="timer_minutes light">25</p>
+                    <div class="timer_dots light">
+                        <div class="timer_dots_dot light"></div>
+                        <div class="timer_dots_dot light"></div>
+                    </div>
+                    <p name="seconds" class="timer_seconds light">08</p>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

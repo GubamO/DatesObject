@@ -1,0 +1,131 @@
+
+$namun-font: NanumGothic, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $namun-font;
+}
+body.light {
+    background-color: #eaeaea;
+}
+body.dark {
+    background-color: #151515;
+}
+.calendar_month.light {
+    background-color: #fff;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+    p.light {
+        color: #7c7c7c;
+    }
+}
+.calendar_month.dark {
+    background-color: #000;
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+    p.dark {
+        color: #b8b8b8;
+    }
+}
+.calendar_day.light, .calendar_year.light, .calendar_day.dark, .calendar_year.dark {
+    background-color: #b03737;
+    color: #962f2f;
+    border-color: #962f2f;
+    p.light, p.dark {
+        color: #fff;
+    }
+}
+.timer_dots_dot.light {
+    background-color: #474747;
+}
+.timer_dots_dot.dark {
+    background-color: #b8b8b8;
+}
+.timer.light {
+    color: #474747;
+}
+.timer.dark {
+    color: #b8b8b8;
+}
+
+.timeshow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    transform: translateY(50%);
+    gap: 25px;
+}
+.timer {
+    font-size: 100px;
+    width: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    &_seconds {
+        margin-left: 4px;
+        margin-top: 30px;
+        bottom: 0;
+        font-size: 70px;
+    }
+    &_minutes, &_hours {
+        width: fit-content;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    &_dots {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+        &_dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 25px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+    }
+}
+.calendar {
+    width: 250px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    &_month {
+        font-size: 75px;
+        p {
+            width: fit-content;
+            margin: auto;
+            font-weight: bolder;
+        }
+    }
+    &_day, &_year {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 40px;
+        p {
+            width: fit-content;
+            margin: auto;
+        }
+    }
+    &_month {
+        border-left: solid 5px;
+        border-right: solid 5px;
+    }
+    &_day {
+        border-left: solid 5px;
+        border-right: solid 5px;
+        border-top: solid 5px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    &_year {
+        border-left: solid 5px;
+        border-right: solid 5px;
+        border-bottom: solid 5px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 26px;
+    }
+}
